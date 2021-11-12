@@ -1,4 +1,7 @@
-;; 需要安装pyls: https://github.com/palantir/python-language-server
+(require-package 'lsp-python-ms)
+
+(setq lsp-python-ms-auto-install-server t)
+
 (add-hook 'python-mode-hook #'lsp)
 
 (provide 'init-python)
