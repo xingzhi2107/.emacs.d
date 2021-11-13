@@ -35,3 +35,5 @@
 (package-install 'json)
 (package-install 'org)
 (package-install 'use-package)
+(package-install 'rustic)
+(package-install 'racer)

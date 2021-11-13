@@ -57,6 +57,7 @@
 (require 'init-org)
 (require 'init-typescript)
 (require 'init-python)
+(require 'init-rust)
 ;; (require 'init-css)
 ;; (require 'init-swift)
 
@@ -90,7 +91,7 @@
  '(lsp-project-whitelist '("^/Users/mistkafka/Code/gllue/web1/$"))
  '(org-agenda-files '("~/gtd/plan.org.gpg" "~/gtd/index.org.gpg"))
  '(package-selected-packages
-   '(term exec-path-from-shell "s-1.12.0" "s" 's "s" s proxy-mode with-proxy lsp-python-ms swift-mode lsp-sourcekit bing-dict lsp-vue org-pomodoro cl-macs xkcd pdf-tools restclient tide-mode org-crypt tramp-cache dockerfile-mode stylus-mode editorconfig nginx-mode window-number multi-term paredit slime evil smartparens htmlize 0blayout color-theme-sanityinc-tomorrow js-doc cnfonts counsel auto-complete page-break-lines yasnippet-snippets yasnippet-snippetst yasnippet doom-themes use-package lsp-python lsp-javascript-typescript lsp-ui lsp-mode eyebrowse which-key typescript-mode magit ivy web-mode))
+   '(racer rustic term exec-path-from-shell "s-1.12.0" "s" 's "s" s proxy-mode with-proxy lsp-python-ms swift-mode lsp-sourcekit bing-dict lsp-vue org-pomodoro cl-macs xkcd pdf-tools restclient tide-mode org-crypt tramp-cache dockerfile-mode stylus-mode editorconfig nginx-mode window-number multi-term paredit slime evil smartparens htmlize 0blayout color-theme-sanityinc-tomorrow js-doc cnfonts counsel auto-complete page-break-lines yasnippet-snippets yasnippet-snippetst yasnippet doom-themes use-package lsp-python lsp-javascript-typescript lsp-ui lsp-mode eyebrowse which-key typescript-mode magit ivy web-mode))
  '(safe-local-variable-values '((epa-file-select-keys "98DE5D28")))
  '(send-mail-function 'mailclient-send-it)
  '(vc-annotate-background "#282a36")
