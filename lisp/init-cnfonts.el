@@ -1,5 +1,5 @@
 
-(require-package'cnfonts)
+(require'cnfonts)
 (cnfonts-enable)
 
 (global-set-key (kbd "s--") 'cnfonts-decrease-fontsize)

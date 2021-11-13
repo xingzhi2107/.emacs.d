@@ -6,15 +6,15 @@
 (setq bookmark-default-file "~/.emacs.d/.cache/bookmarks")
 
 ;; 默认启动ivy-mode
-(require-package 'ivy)
-(require-package 'counsel)
+(require 'ivy)
+(require 'counsel)
 (ivy-mode 1)
 (when (commandp 'counsel-M-x)
   (global-set-key [remap execute-extended-command] #'counsel-M-x))
 
 
 ;; 默认启动which-key-mode
-(require-package 'which-key)
+(require 'which-key)
 (which-key-mode)
 
 ;; 我更喜欢带正则表达式的search
@@ -22,7 +22,7 @@
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
 
 ;; magit的按键绑定
-(require-package 'magit)
+(require 'magit)
 (mistkafka/keyboard/bind "gs" 'magit-status)
 (mistkafka/keyboard/bind "gp" 'magit-push-current-to-upstream)
 (mistkafka/keyboard/bind "ghb" 'magit-blame)
@@ -42,7 +42,7 @@
 ;; (global-set-key (kbd "S-v") 'clipboard-yank)
 
 ;; flycheck语法检查器
-(require-package 'flycheck)
+(require 'flycheck)
 
 ;; ert测试
 (defun mistkafka/misc/ert-test-current-buffer ()
@@ -55,16 +55,16 @@
 (setq tramp-persistency-file-name "/Users/mistkafka/.emacs.d/.cache/tramp")
 
 ;; theme
-(require-package 'doom-themes)
+(require 'doom-themes)
 (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
       doom-themes-enable-italic t) ; if nil, italics is universally disabled
 (load-theme 'doom-one-light t)
 (doom-themes-org-config)
 
 ;; yasnippet配置
-(require-package 'yasnippet)
-(require-package 'yasnippet)
-(require-package 'yasnippet-snippets)
+(require 'yasnippet)
+(require 'yasnippet)
+(require 'yasnippet-snippets)
 (yas-global-mode 1)
 (yas-reload-all)
 
@@ -120,12 +120,12 @@
 
 
 ;; window编号
-(require-package 'window-numbering)
+(require 'window-numbering)
 (window-numbering-mode 1)
 
 
 ;; editor config
-(require-package 'editorconfig)
+(require 'editorconfig)
 (editorconfig-mode 1)
 
 ;; 开启行号

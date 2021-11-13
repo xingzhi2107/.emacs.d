@@ -1,4 +1,4 @@
-(require-package 'bing-dict)
+(require 'bing-dict)
 
 ;; Apple
 (defun mistkafka/utils/get-region-str ()

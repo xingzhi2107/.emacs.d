@@ -1,4 +1,4 @@
-(require-package 'eyebrowse)
+(require 'eyebrowse)
 
 (eyebrowse-mode t)
 

@@ -1,10 +1,10 @@
 ;;; -*- lexical-binding: t -*-
 
-(require-package 's)
+(require 's)
 (require 'json-storage)
-(require-package 'seq)
-(require-package 'dash)
-(require-package 'lsp-mode)
+(require 'seq)
+(require 'dash)
+(require 'lsp-mode)
 
 (require 'mistkafka-file)
 

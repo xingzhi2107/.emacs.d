@@ -1,5 +1,5 @@
-(require-package 'lsp-sourcekit)
-(require-package 'swift-mode)
+(require 'lsp-sourcekit)
+(require 'swift-mode)
 
 (use-package lsp-sourcekit
   :after lsp-mode

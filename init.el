@@ -1,42 +1,17 @@
-;; 初始化包管理器，指向国内的镜像仓库
-(require 'package)
-;; (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-;;                          ("melpa" . "http://elpa.emacs-china.org/melpa/")))
-(setq package-archives '(("gnu"   . "https://elpa.gnu.org/packages/")
-                         ("melpa" . "https://stable.melpa.org/packages/")))
-
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory)) ;; 添加`./lisp'到`load-path'中，这里将放置所有配置文
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "lisp/third-lib" user-emacs-directory))
 
-(package-initialize)
+(require 'init-package)
+(require 'init-proxy)
 
 ;; fix mac 10.15无法iCloud打开文件夹的问题
 (setq dired-use-ls-dired nil)
 
-(require 'init-proxy)
-
-(defun require-package (package)
-  "如果PACKAGE已经安装，则`require'这个PACKAGE。
-否则，安装这个PACKAGE"
-  (if (package-installed-p package)
-      (require package)
-    (mistkafka/package-install package)))
-
-(defun mistkafka/package-install (package)
-  "安全的安装PACKAGE。需要说明的是，`package-install'一个package之后，
-会自动`require'这个PACKAGE"
-  (unless package-archive-contents
-    (package-refresh-contents))
-  (unless (assoc package package-archive-contents)
-    (package-refresh-contents))
-  (package-install package))
-
-(require-package 'use-package)
-
 ;; 加载第三方包
-(require-package 'ivy)
+(require 'use-package)
+(require 'ivy)
+(require 's)
 
-(require-package 's)
 (defun mistkafka/keyboard/bind (key-describe command)
   "将COMMAND按键绑定到`M-n'下的KEY-DESCRIBE."
   (let* ((key-describe-items (s-split "" key-describe t))
@@ -115,7 +90,7 @@
  '(lsp-project-whitelist '("^/Users/mistkafka/Code/gllue/web1/$"))
  '(org-agenda-files '("~/gtd/plan.org.gpg" "~/gtd/index.org.gpg"))
  '(package-selected-packages
-   '(proxy-mode with-proxy lsp-python-ms swift-mode lsp-sourcekit bing-dict lsp-vue org-pomodoro cl-macs xkcd pdf-tools restclient tide-mode org-crypt tramp-cache dockerfile-mode stylus-mode editorconfig nginx-mode window-number multi-term paredit slime evil smartparens htmlize 0blayout color-theme-sanityinc-tomorrow js-doc cnfonts counsel auto-complete page-break-lines yasnippet-snippets yasnippet-snippetst yasnippet doom-themes use-package lsp-python lsp-javascript-typescript lsp-ui lsp-mode eyebrowse which-key typescript-mode magit ivy web-mode))
+   '(term exec-path-from-shell "s-1.12.0" "s" 's "s" s proxy-mode with-proxy lsp-python-ms swift-mode lsp-sourcekit bing-dict lsp-vue org-pomodoro cl-macs xkcd pdf-tools restclient tide-mode org-crypt tramp-cache dockerfile-mode stylus-mode editorconfig nginx-mode window-number multi-term paredit slime evil smartparens htmlize 0blayout color-theme-sanityinc-tomorrow js-doc cnfonts counsel auto-complete page-break-lines yasnippet-snippets yasnippet-snippetst yasnippet doom-themes use-package lsp-python lsp-javascript-typescript lsp-ui lsp-mode eyebrowse which-key typescript-mode magit ivy web-mode))
  '(safe-local-variable-values '((epa-file-select-keys "98DE5D28")))
  '(send-mail-function 'mailclient-send-it)
  '(vc-annotate-background "#282a36")

@@ -1,5 +1,5 @@
 ;; 因为有冲突，所以先注释 https://emacs-china.org/t/topic/5492/2
-;; ;; (require-package 'lsp-css)
+;; ;; (require 'lsp-css)
 ;; (defconst lsp-css--get-root
 ;;   (lsp-make-traverser #'(lambda (dir)
 ;;                           (directory-files dir nil "package.json"))))

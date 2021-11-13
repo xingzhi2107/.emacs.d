@@ -1,4 +1,4 @@
-(require-package 'lsp-python-ms)
+(require 'lsp-python-ms)
 
 (setq lsp-python-ms-auto-install-server t)
 

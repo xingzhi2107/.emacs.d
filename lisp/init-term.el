@@ -1,4 +1,4 @@
-(require-package 'term)
+(require 'term)
 
 ;; 移除term-mode的"M-n"绑定
 (add-hook 'term-mode-hook

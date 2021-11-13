@@ -58,7 +58,7 @@
          "\\|"
          "\\(?:\\*\\|[+-]?[[:alnum:].,\\]*[[:alnum:]]\\)\\)")))
 
-(require-package 'org-pomodoro)
+(require 'org-pomodoro)
 (defun mistkafka/org-setup-pomodoro ()
   (add-hook 'org-pomodoro-finished-hook
             (lambda ()

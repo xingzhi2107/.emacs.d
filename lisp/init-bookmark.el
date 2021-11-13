@@ -1,4 +1,4 @@
-(require-package 'bookmark)
+(require 'bookmark)
 
 (global-set-key
  (kbd "C-M-s-!")
