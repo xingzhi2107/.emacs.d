@@ -22,6 +22,7 @@
 (package-install 'swift-mode)
 (package-install 'term)
 (package-install 'lsp-mode)
+(package-install 'lsp-ui)
 (package-install 'eyebrowse)
 (package-install 'company)
 (package-install 's)
@@ -37,3 +38,4 @@
 (package-install 'use-package)
 (package-install 'rustic)
 (package-install 'racer)
+(package-install 'typescript-mode)

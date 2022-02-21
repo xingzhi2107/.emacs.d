@@ -17,6 +17,12 @@
      (t                            (funcall execute-fun)))
     ))
 
+(defun mistkafka/file/get-curr-file-path ()
+  (buffer-file-name))
+
+(defun mistkafka/file/get-curr-dir-path ()
+  (let ((filename (if (equal major-mode 'dired-mode) default-directory )))))
+
 (defun mistkafka/file/safe-get-file-name ()
   "get file name or directory name.
 If there is not buffer-file, return nil"

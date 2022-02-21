@@ -308,11 +308,15 @@
     (find-file git-root-path))
   (message "已清除本project的所有buffer"))
 
+(defun mistkafka/git-project/select-curr-file-in-dired ()
+  (dired ))
+
 (mistkafka/keyboard/bind "pf" 'mistkafka/git-project/find-file)
 (mistkafka/keyboard/bind "pg" 'mistkafka/git-project/git-grep)
 (mistkafka/keyboard/bind "pG" 'mistkafka/git-project/reactive-git-grep)
 (mistkafka/keyboard/bind "ps" 'mistkafka/git-project/switch-to-git-project)
 (mistkafka/keyboard/bind "pc" 'mistkafka/git-project/git-grep--clear-cache)
+(mistkafka/keyboard/bind-super-key "7" 'imenu)
 
 
 (mistkafka/keyboard/bind "fcp" 'mistkafka/git-project/copy-file-name-in-project-to-clipboard)

@@ -24,6 +24,7 @@
 ;; magit的按键绑定
 (require 'magit)
 (mistkafka/keyboard/bind "gs" 'magit-status)
+(mistkafka/keyboard/bind-super-key "9" 'magit-status)
 (mistkafka/keyboard/bind "gp" 'magit-push-current-to-upstream)
 (mistkafka/keyboard/bind "ghb" 'magit-blame)
 

@@ -47,6 +47,7 @@
             " \t\r\n,\"'"
             "."
             1))
+(setq org-list-allow-alphabetical t)
 (defun mistkafka/org-setup-markup ()
   (setq org-match-substring-regexp
         (concat
