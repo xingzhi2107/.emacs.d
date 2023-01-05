@@ -1,6 +1,8 @@
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "lisp/third-lib" user-emacs-directory))
 
+(require 'init-polyfill)
+
 (require 'init-package)
 (require 'init-proxy)
 
