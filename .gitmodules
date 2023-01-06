@@ -1,0 +1,3 @@
+[submodule "lisp/packages/cnfonts"]
+	path = lisp/packages/cnfonts
+	url = https://github.com/tumashu/cnfonts.git

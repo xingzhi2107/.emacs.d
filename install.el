@@ -6,7 +6,7 @@
 
 (package-refresh-contents)
 
-(package-install 'cnfonts)
+;; (package-install 'cnfonts)
 (package-install 'ivy)
 (package-install 'counsel)
 (package-install 'which-key)
