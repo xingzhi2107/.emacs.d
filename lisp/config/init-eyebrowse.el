@@ -39,11 +39,10 @@
          (curr-layout (assoc curr-layout-number layouts))
          (curr-layout-name (nth 2 curr-layout))
          (curr-layout-display (propertize
-                               (format "%s-%s" curr-layout-number curr-layout-name)
+                               (format "%s" curr-layout-name)
                                'face '((:foreground "#0366d6"))))
          )
-    (format "%s/%s"
-            layout-counts
+    (format "Layout:%s "
             curr-layout-display
             )))
 

@@ -7,7 +7,7 @@
   ;; layout info
   '(:eval (mistkafka/eyebrowse-mode-line))
   ;; window number
-  '(:eval (propertize (format "-%s " (window-numbering-get-number-string)) 'face '((:foreground "#308191"))))
+  '(:eval (propertize (format "Win:%s" (window-numbering-get-number-string)) 'face '((:foreground "#308191"))))
   " "
   
   ;; buffer name and edit status
@@ -28,7 +28,7 @@
                       'help-echo buffer-file-coding-system))
   "] "
 
-  '(:eval (propertize (magit-get-current-branch) 'face 'font-lock-string-face))
+  '(:eval (propertize (format "Branch:%s"(magit-get-current-branch)) 'face 'font-lock-string-face))
 
   'org-pomodoro-mode-line
   ))
