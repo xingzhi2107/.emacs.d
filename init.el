@@ -38,6 +38,7 @@
 (add-subdirs-to-load-path (expand-file-name "lisp" user-emacs-directory))
 
 (require 'init)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

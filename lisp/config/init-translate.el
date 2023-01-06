@@ -1,5 +1,3 @@
-(require 'bing-dict)
-
 ;; Apple
 (defun mistkafka/utils/get-region-str ()
   (buffer-substring-no-properties
@@ -27,10 +25,13 @@ Or prompt user input."
                 nil 0 nil
                 "-e" (format "say \"%s\"" content)))
 
+(defun mistkafka/do-translate ()
+  (message "TODO: 用基于puppetter的方式实现"))
+
 (defun mistkafka/translate ()
   (interactive)
   (let ((word (mistkafka/translate/get-region-or-word-at-point-or-input)))
-    (bing-dict-brief word)
+    (mistkafka/do-translate word)
     (mistkafka/translate/do-speech word)
     ))
 

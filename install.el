@@ -30,7 +30,7 @@
 (package-install 'dash)
 (package-install 'page-break-lines)
 (package-install 'bookmark)
-(package-install 'bing-dict)
+;; (package-install 'bing-dict)
 (package-install 'org-pomodoro)
 (package-install 'lsp-python-ms)
 (package-install 'json)
