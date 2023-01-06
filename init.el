@@ -1,4 +1,4 @@
-;; (setq debug-on-error t)
+(setq debug-on-error t)
 (require 'cl-lib)
 
 (tool-bar-mode -1)

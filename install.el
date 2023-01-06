@@ -10,7 +10,9 @@
 ;; (package-install 'ivy)
 ;; (package-install 'counsel)
 ;; (package-install 'which-key)
-(package-install 'magit)
+(package-install 'dash)
+(package-install 'magit)                ; 需要本地make，总是失败，有点麻烦，暂时不迁移。
+
 (package-install 'flycheck)
 (package-install 'doom-themes)
 (package-install 'yasnippet)
@@ -25,9 +27,8 @@
 (package-install 'lsp-ui)
 (package-install 'eyebrowse)
 (package-install 'company)
-(package-install 's)
+;; (package-install 's)
 (package-install 'seq)
-(package-install 'dash)
 (package-install 'page-break-lines)
 (package-install 'bookmark)
 ;; (package-install 'bing-dict)
