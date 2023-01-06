@@ -9,7 +9,7 @@
 ;; (package-install 'cnfonts)
 ;; (package-install 'ivy)
 ;; (package-install 'counsel)
-(package-install 'which-key)
+;; (package-install 'which-key)
 (package-install 'magit)
 (package-install 'flycheck)
 (package-install 'doom-themes)

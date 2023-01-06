@@ -4,3 +4,6 @@
 [submodule "lisp/packages/swiper"]
 	path = lisp/packages/swiper
 	url = https://github.com/abo-abo/swiper.git
+[submodule "lisp/packages/emacs-which-key"]
+	path = lisp/packages/emacs-which-key
+	url = https://github.com/justbur/emacs-which-key.git
