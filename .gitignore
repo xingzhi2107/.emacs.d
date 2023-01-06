@@ -3,6 +3,7 @@
 
 .cache
 elpa
+.DS_Store
 
 eshell/history
 eshell/alias

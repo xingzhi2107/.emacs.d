@@ -1,3 +1,6 @@
 [submodule "lisp/packages/cnfonts"]
 	path = lisp/packages/cnfonts
 	url = https://github.com/tumashu/cnfonts.git
+[submodule "lisp/packages/swiper"]
+	path = lisp/packages/swiper
+	url = https://github.com/abo-abo/swiper.git
