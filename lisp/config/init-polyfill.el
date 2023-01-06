@@ -1,6 +1,4 @@
-;;; init-polyfill.el
-
-;; provide global override built-in code for fix issue
+;;; init-polyfill.el -- 覆盖emacs的内置代码来临时修复一些官方还没修复的bug
 
 
 ;; overriding image.el function image-type-available-p

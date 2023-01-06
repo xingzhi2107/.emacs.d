@@ -2,6 +2,8 @@
 
 这是我个人真正意义上的第一份emacs配置。
 
+2023年重新整理了一下配置，很多配置都是抄自[[https://github.com/manateelazycat/lazycat-emacs][Lazycat Emacs]]的配置，包括备注。鉴于只是个人使用，所以不一一指出。
+
 * DONE layout管理 -- eyebrower + +window pourse+
   - State "DONE"       from "TODO"       [2018-04-01 Sun 04:17]
 * DONE 代码补全 -- lsp-mode

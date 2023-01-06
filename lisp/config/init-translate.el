@@ -34,6 +34,6 @@ Or prompt user input."
     (mistkafka/translate/do-speech word)
     ))
 
-(mistkafka/keyboard/bind "t" 'mistkafka/translate)
+(mistkafka/keyboard/bind "tt" 'mistkafka/translate)
 
 (provide 'init-translate)

@@ -1,6 +1,7 @@
 
 ;; 不要backup文件了！哪天吃了苦头再说
 (setq make-backup-files nil)
+(setq warning-minimum-level :emergency)
 
 ;; 书签存储地址
 (setq bookmark-default-file "~/.emacs.d/.cache/bookmarks")
@@ -21,22 +22,6 @@
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
 
-;; magit的按键绑定
-(require 'magit)
-(mistkafka/keyboard/bind "gs" 'magit-status)
-(mistkafka/keyboard/bind-super-key "9" 'magit-status)
-(mistkafka/keyboard/bind "gp" 'magit-push-current-to-upstream)
-(mistkafka/keyboard/bind "ghb" 'magit-blame)
-
-(mistkafka/keyboard/bind "gbn" 'magit-branch-and-checkout)
-(mistkafka/keyboard/bind "gbc" 'magit-branch-checkout)
-
-(mistkafka/keyboard/bind "gmm" 'magit-merge)
-(mistkafka/keyboard/bind "gma" 'magit-merge-abort)
-(mistkafka/keyboard/bind "gmc" 'magit-merge) ;magit-merge-continue
-
-(mistkafka/keyboard/bind "grr" 'magit-rebase)
-(mistkafka/keyboard/bind "gri" 'magit-rebase-interactive)
 
 ;; 复制黏贴, 在终端里依然不work
 ;; (global-set-key (kbd "S-c") 'clipboard-kill-region)
@@ -57,6 +42,7 @@
 
 ;; theme
 (require 'doom-themes)
+(require 'doom-themes-ext-org)
 (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
       doom-themes-enable-italic t) ; if nil, italics is universally disabled
 (load-theme 'doom-one-light t)

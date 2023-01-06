@@ -1,9 +1,6 @@
-;; (setq debug-on-error t)
-(require 'cl-lib)
+;;; init-foundation.el -- 提供一些基础功能的函数，不属于配置
 
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
+
 
 (defun add-subdirs-to-load-path (search-dir)
   (interactive)
@@ -35,21 +32,4 @@
         ;; 继续递归搜索子目录
         (add-subdirs-to-load-path subdir-path)))))
 
-(add-subdirs-to-load-path (expand-file-name "lisp" user-emacs-directory))
-
-(require 'init)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(warning-suppress-log-types
-   '(((editorconfig editorconfig--advice-find-file-noselect))
-     ((editorconfig editorconfig--advice-find-file-noselect))))
- '(warning-suppress-types '(((editorconfig editorconfig--advice-find-file-noselect)))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(provide 'init-foundation)
