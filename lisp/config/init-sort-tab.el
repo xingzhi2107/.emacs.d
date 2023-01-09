@@ -8,6 +8,7 @@
 (mistkafka/keyboard/bind-super-key "4" 'sort-tab-select-visible-tab)
 (mistkafka/keyboard/bind-super-key "5" 'sort-tab-select-visible-tab)
 (mistkafka/keyboard/bind-super-key "w" 'sort-tab-close-current-tab)
+(mistkafka/keyboard/bind-super-key "W" 'sort-tab-close-all-tabs)
 (mistkafka/keyboard/bind-super-key "{" 'sort-tab-select-prev-tab)
 (mistkafka/keyboard/bind-super-key "}" 'sort-tab-select-next-tab)
 
