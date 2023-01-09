@@ -10,3 +10,6 @@
 [submodule "lisp/packages/s.el"]
 	path = lisp/packages/s.el
 	url = https://github.com/magnars/s.el
+[submodule "lisp/packages/sort-tab"]
+	path = lisp/packages/sort-tab
+	url = https://github.com/manateelazycat/sort-tab.git

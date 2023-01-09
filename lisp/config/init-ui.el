@@ -7,6 +7,7 @@
   ;; layout info
   '(:eval (mistkafka/eyebrowse-mode-line))
   ;; window number
+  " "
   '(:eval (propertize (format "Win:%s" (window-numbering-get-number-string)) 'face '((:foreground "#308191"))))
   " "
   

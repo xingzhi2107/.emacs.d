@@ -14,6 +14,7 @@
         (require 'init-polyfill)
         (require 'init-foundation)
         (require 'ivy)
+        (require 'use-package)
         (require 'init-exec-path)
         (require 'init-proxy)
         (require 'init-keyboard)
@@ -24,10 +25,12 @@
         (require 'init-ui)
         (require 'init-bookmark)
         (require 'init-translate)
+        (require 'init-sort-tab)
 
         (run-with-idle-timer
          1 nil
          #'(lambda ()
+             (require 'init-swift)
              (require 'init-org)
              (require 'init-lsp)
              (require 'init-company)
