@@ -26,7 +26,7 @@
   (org-crypt-use-before-save-magic)
   (setq org-crypt-tag-matcher "secret")
   (setq org-tags-exclude-from-inheritance (quote ("secret")))
-  (setq org-crypt-key "98DE5D28"))
+  (setq org-crypt-key "AB3214AF"))
 
 (defun mistkafka/org-defun-alias-funs ()
   
@@ -116,6 +116,17 @@
     (org-pomodoro)
     (save-buffer)
     ))
+
+(defun mistkafka/org-mode/insert-checkbox-below ()
+  (interactive)
+  (insert "\n  - [ ] ")
+  )
+
+(defun mistkafka/org-mode/key-bind ()
+  (define-key org-mode-map (kbd "s-<return>") 'mistkafka/org-mode/insert-checkbox-below)
+  )
+(add-hook 'org-mode-hook 'mistkafka/org-mode/key-bind)
+
 
 (mistkafka/keyboard/bind "ti" 'mistkafka/org-mode/inbox)
 (mistkafka/keyboard/bind "ta" 'org-agenda)
