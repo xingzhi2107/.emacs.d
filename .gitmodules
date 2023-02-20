@@ -13,3 +13,6 @@
 [submodule "lisp/packages/sort-tab"]
 	path = lisp/packages/sort-tab
 	url = https://github.com/manateelazycat/sort-tab.git
+[submodule "lisp/packages/org-roam"]
+	path = lisp/packages/org-roam
+	url = https://github.com/org-roam/org-roam.git
