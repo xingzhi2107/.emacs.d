@@ -316,6 +316,7 @@
 (mistkafka/keyboard/bind "pG" 'mistkafka/git-project/reactive-git-grep)
 (mistkafka/keyboard/bind "ps" 'mistkafka/git-project/switch-to-git-project)
 (mistkafka/keyboard/bind "pc" 'mistkafka/git-project/git-grep--clear-cache)
+(mistkafka/keyboard/bind "pk" 'mistkafka/git-project/kill-buffers)
 (mistkafka/keyboard/bind-super-key "7" 'imenu)
 
 
