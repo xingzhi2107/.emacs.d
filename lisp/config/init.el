@@ -32,6 +32,7 @@
          #'(lambda ()
              (require 'init-swift)
              (require 'init-org)
+             (require 'init-org-roam)
              (require 'init-lsp)
              (require 'init-company)
              (require 'init-term)

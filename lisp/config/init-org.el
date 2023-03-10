@@ -59,8 +59,9 @@
          "\\|"
          "\\(?:\\*\\|[+-]?[[:alnum:].,\\]*[[:alnum:]]\\)\\)")))
 
-(require 'org-pomodoro)
+
 (defun mistkafka/org-setup-pomodoro ()
+  (require 'org-pomodoro)
   (add-hook 'org-pomodoro-finished-hook
             (lambda ()
               (my/system-dialog "Pomodoro completed!" "Time for a break.")))
@@ -124,6 +125,7 @@
 
 (defun mistkafka/org-mode/key-bind ()
   (define-key org-mode-map (kbd "s-<return>") 'mistkafka/org-mode/insert-checkbox-below)
+  (local-set-key (kbd "C-c C-m") 'org-store-link)
   )
 (add-hook 'org-mode-hook 'mistkafka/org-mode/key-bind)
 
@@ -131,6 +133,6 @@
 (mistkafka/keyboard/bind "ti" 'mistkafka/org-mode/inbox)
 (mistkafka/keyboard/bind "ta" 'org-agenda)
 (mistkafka/keyboard/bind "tp" 'mistkafka/org-mode/start-pomodoro)
-  
+
 
 (provide 'init-org)
