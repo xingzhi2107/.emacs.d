@@ -19,3 +19,15 @@
 [submodule "lisp/packages/emacsql"]
 	path = lisp/packages/emacsql
 	url = https://github.com/magit/emacsql.git
+[submodule "lisp/packages/lsp-bridge"]
+	path = lisp/packages/lsp-bridge
+	url = https://github.com/manateelazycat/lsp-bridge
+[submodule "lisp/packages/markdown-mode"]
+	path = lisp/packages/markdown-mode
+	url = https://github.com/jrblevin/markdown-mode
+[submodule "lisp/packages/posframe"]
+	path = lisp/packages/posframe
+	url = https://github.com/tumashu/posframe.git
+[submodule "lisp/packages/acm-terminal"]
+	path = lisp/packages/acm-terminal
+	url = git@github.com:twlz0ne/acm-terminal.git

@@ -30,13 +30,14 @@
         (run-with-idle-timer
          1 nil
          #'(lambda ()
-             (require 'init-swift)
+             ;; (require 'init-swift)
              (require 'init-org)
              (require 'init-org-roam)
-             (require 'init-lsp)
-             (require 'init-company)
+             (require 'init-lsp-bridge)
+             ;; (require 'init-lsp)
+             ;; (require 'init-company)
              (require 'init-term)
-             (require 'init-python)
+             ;; (require 'init-python)
              (require 'init-misc)
 
              ))
