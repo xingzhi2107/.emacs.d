@@ -1,5 +1,10 @@
 ;;; -*- lexical-binding: t -*-
 
+;; TODO:
+;; - [ ] 提供一个选择已打开repo的方法
+;; - [ ] 提供一个关闭其它repo的方法
+;; - [ ] grep不是很好用，试试lazycat的grep方法，他貌似实现了把搜素结果放在另一个buffer的功能
+
 (require 's)
 (require 'json-storage)
 (require 'seq)
