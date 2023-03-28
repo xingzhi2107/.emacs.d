@@ -46,7 +46,6 @@
 
 
 ;; truncate
-(setq-default truncate-lines t)
-(setq-default truncate-partial-width-windows 100)
+(global-visual-line-mode 1)
 
 (provide 'init-ui)
