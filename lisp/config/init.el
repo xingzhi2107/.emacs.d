@@ -25,7 +25,11 @@
         (require 'init-ui)
         (require 'init-bookmark)
         (require 'init-translate)
-        (require 'init-sort-tab)
+        
+        ;; 暂时感觉不是很需要，经常来回切换的buffer也就一两个。
+        ;; 但是随着打开的buffer越来越多，经常切换的那几个buffer
+        ;; 就被淹没了。
+        ;; (require 'init-sort-tab)
 
         (run-with-idle-timer
          1 nil
@@ -33,7 +37,7 @@
              ;; (require 'init-swift)
              (require 'init-org)
              (require 'init-org-roam)
-             (require 'init-lsp-bridge)
+             ;; (require 'init-lsp-bridge)
              ;; (require 'init-lsp)
              ;; (require 'init-company)
              (require 'init-term)

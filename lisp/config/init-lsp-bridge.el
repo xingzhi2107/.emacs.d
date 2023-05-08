@@ -85,7 +85,7 @@
 
 ;;; Code:
 
-(global-lsp-bridge-mode)
+(global-lsp-bridge-mode nil)
 
 ;; 融合 `lsp-bridge' `find-function' 以及 `dumb-jump' 的智能跳转
 (defun lsp-bridge-jump ()

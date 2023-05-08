@@ -163,15 +163,23 @@
 (mistkafka/keyboard/bind "kc" 'mistkafka/kill-ring/copy)
 
 
-;; note
-(defun mistkafka/open-daily-log-file ()
-  (interactive)
-  (find-file "~/misc-note/glowing.org.gpg"))
-
-(mistkafka/keyboard/bind "ol" 'mistkafka/open-daily-log-file)
-
 ;; tramp mode
 (setq tramp-copy-size-limit 10000000)
 (setq tramp-inline-compress-start-size 10000000)
+
+
+;; super key shortcuts
+(defun mistkafka/quick-open/gtd-file ()
+  (interactive)
+  (find-file "~/gtd/journal.org.gpg"))
+(mistkafka/keyboard/bind-super-key "t" 'mistkafka/quick-open/gtd-file)
+
+(defun mistkafka/quick-open/misc-note ()
+  (interactive)
+  (find-file "~/misc-note/"))
+
+(mistkafka/keyboard/bind-super-key "m" 'mistkafka/quick-open/misc-note)
+
+
 
 (provide 'init-misc)
