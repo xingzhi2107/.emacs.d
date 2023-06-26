@@ -116,7 +116,7 @@
 (editorconfig-mode 1)
 
 ;; 开启行号
-(global-linum-mode +1)
+;; (global-linum-mode +1)
 
 ;; magit扩展工具
 (defun mistkafka/magit/blame-try-open-gll-project-task ()

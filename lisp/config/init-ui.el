@@ -19,8 +19,9 @@
   ;; relative position, column
   "["
   (propertize "%p" 'face 'font-lock-constant-face) ;; % above top
-  ","
-  (propertize "%02c" 'face 'font-lock-type-face)
+  ", "
+  (propertize "%l" 'face 'font-lock-type-face)
+  (propertize ":%c" 'face 'font-lock-type-face)
   "] "
 
   ;; the current major mode for the buffer.
