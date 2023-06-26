@@ -45,7 +45,7 @@
 (require 'doom-themes-ext-org)
 (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
       doom-themes-enable-italic t) ; if nil, italics is universally disabled
-(load-theme 'doom-one-light t)
+(load-theme 'doom-dracula t)
 (doom-themes-org-config)
 
 ;; yasnippet配置
