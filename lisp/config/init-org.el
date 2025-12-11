@@ -62,6 +62,9 @@
 
 (defun mistkafka/org-setup-pomodoro ()
   (require 'org-pomodoro)
+  (setq org-pomodoro-length 20)
+  (setq org-pomodoro-short-break-length 10)
+  (setq org-pomodoro-long-break-length 10)
   (add-hook 'org-pomodoro-finished-hook
             (lambda ()
               (my/system-dialog "Pomodoro completed!" "Time for a break.")))

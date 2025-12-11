@@ -176,9 +176,17 @@
 
 (defun mistkafka/quick-open/misc-note ()
   (interactive)
-  (find-file "~/misc-note/"))
+  (find-file "~/Code/xingzhi/misc-note/"))
 
 (mistkafka/keyboard/bind-super-key "m" 'mistkafka/quick-open/misc-note)
+
+
+(defun mistkafka/quick-open/password-manager ()
+  (interactive)
+  (find-file "~/Code/xingzhi/linen-bag/index.org.gpg"))
+
+(mistkafka/keyboard/bind-super-key "p" 'mistkafka/quick-open/password-manager)
+
 
 
 
